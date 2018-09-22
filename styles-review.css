@@ -1,0 +1,208 @@
+/*This is a review website for WDD 331, most of these notes are just random things that are important or I need to remember*/
+
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+/*****Default styles: Mobile First*****/
+
+box-sizing: border-box;
+
+img {
+ max-width: 100%;
+}
+
+/*height by default is the height of the content, this makes it 100% of the broswer window
+can also use the px,vh,vw (viewport height/width)*/
+
+html {
+ height: 100vh;
+}
+
+/*mini normalizer, reseting the portions and settings*/
+
+body {
+ font-family: Helvetica, Arial, sans-serif;
+ font-size: 1.2em;
+ margin: 0;
+ padding: 0;
+ height: 100%;
+}
+
+body > div {
+ /* padding: 0.4em;*/
+ display: flex;
+ flex-flow: column;
+ background-color: #FAEBD7;
+}
+
+/*Page Header*/
+
+header {
+ background-color: #6495ED;
+}
+
+header h1 {
+ font-size: 9vw;
+ font-family: Lora;
+ padding: 6vw 7vw 0 0;
+}
+
+header hr {
+ width: 85vw;
+ padding: 0;
+}
+
+/*Page Nav*/
+
+header ul {
+ list-style: none;
+ margin-top: 0;
+ padding-bottom: 5px;
+}
+
+header li {
+ font-size: 3.5vw;
+ padding: 1vw 7vw 2vw 0;
+}
+
+header a {
+ text-decoration: none;
+ color: #FAEBD7;
+ display: flex;
+ justify-content: flex-end;
+}
+
+header a:active {
+ color: #DEB887;
+}
+
+header a:hover {
+ text-decoration: underline;
+ color: #FFF;
+}
+
+/*Body*/
+
+main {
+ padding: 0.4em;
+}
+
+article {
+ margin: 6vw .5vw;
+ padding: 35px 30px;
+ background-color: #FFF;
+ box-shadow: 2px 2px 3px #D3D3D3;
+}
+
+.post-date {
+ opacity: 0.5;
+ font-size: .8em;
+}
+
+h2 {
+ margin-top: .5vw;
+ font-size: 1.5em;
+ font-family: Lora;
+}
+
+h2 a {
+ text-decoration: none;
+ color: #000;
+}
+
+h2 a:active {
+ color: #DEB887;
+}
+
+h2 a:hover {
+ color: #6495ED;
+ text-decoration: underline;
+}
+
+figure {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 15vw;
+}
+
+img {
+ width: 45vw;
+}
+
+p {
+ font-size: .8em;
+ margin-bottom: 5px;
+}
+
+p a {
+ text-decoration: none;
+ color: #6495ED;
+}
+
+p a:active {
+ color: #DEB887;
+}
+
+p a:hover {
+ text-decoration: underline;
+ color: #6495ED;
+}
+
+
+/*starts with a media query of min-width (when the page gets bigger than this, do this code) or max-width (when the page is smaller, do this)
+Almost always use min-width because we do mobile first designing*/
+
+/*media query styles always go after the default styles*/
+
+@media screen and (min-width: 50em) {
+
+ body > div {
+  width: 80vw;
+  position: fixed;
+  right: 0
+ }
+
+ header {
+  position: fixed;
+  left: 0;
+  width: 20vw;
+  height: 100vw
+ }
+
+ header h1 {
+  font-size: 1.8em;
+  padding: 2vw 2.5vw 0 2vw;
+  text-align: right;
+  margin-bottom: 0;
+ }
+
+ header hr {
+  width: 15vw;
+ }
+
+ header ul {
+  padding: 0 2.5vw 2vw 0;
+ }
+
+ header li {
+  font-size: .7em;
+  padding: 0 0 .8vw 0;
+ }
+
+ article {
+  margin: 3.5vw 5vw;
+  padding: 40px 50px;
+ }
+
+ .post-date {
+  font-size: 1em;
+ }
+
+ h2 {
+  font-size: 2em;
+ }
+
+ figure {
+  margin-top: 6vw;
+ }
+}
