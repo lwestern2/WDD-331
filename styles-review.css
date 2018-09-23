@@ -157,8 +157,8 @@ Almost always use min-width because we do mobile first designing*/
 @media screen and (min-width: 50em) {
 
  body > div {
-  width: 80vw;
-  position: fixed;
+  width: 80%;
+  position: absolute;
   right: 0
  }
 
@@ -166,7 +166,7 @@ Almost always use min-width because we do mobile first designing*/
   position: fixed;
   left: 0;
   width: 20vw;
-  height: 100vw
+  height: 100vw;
  }
 
  header h1 {
@@ -186,23 +186,31 @@ Almost always use min-width because we do mobile first designing*/
 
  header li {
   font-size: .7em;
-  padding: 0 0 .8vw 0;
+  padding: 0 0 .9vw 0;
  }
 
  article {
-  margin: 3.5vw 5vw;
+  margin: 3vw 5vw;
   padding: 40px 50px;
  }
 
  .post-date {
-  font-size: 1em;
+  font-size: 1.5vw;
  }
 
  h2 {
-  font-size: 2em;
+  font-size: 3.5vw;
  }
 
  figure {
   margin-top: 6vw;
+ }
+
+ img {
+  width: 22vw;
+ }
+
+ p {
+  font-size: .9em;
  }
 }
