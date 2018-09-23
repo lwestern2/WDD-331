@@ -4,7 +4,9 @@
 
 /*****Default styles: Mobile First*****/
 
-box-sizing: border-box;
+* {
+ box-sizing: border-box;
+}
 
 img {
  max-width: 100%;
