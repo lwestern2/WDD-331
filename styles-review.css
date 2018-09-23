@@ -73,6 +73,11 @@ header a {
  justify-content: flex-end;
 }
 
+header a:visited {
+ text-decoration: none;
+ color: #FAEBD7;
+}
+
 header a:active {
  color: #DEB887;
 }
@@ -137,6 +142,11 @@ p {
 }
 
 p a {
+ text-decoration: none;
+ color: #6495ED;
+}
+
+p a:visited {
  text-decoration: none;
  color: #6495ED;
 }
